@@ -586,6 +586,7 @@ namespace TechInfoSystems.Data.SQLite
 						cmd.Parameters.AddWithValue ("$FailedPasswordAttemptWindowStart", nullDate);
 						cmd.Parameters.AddWithValue ("$FailedPasswordAnswerAttemptCount", 0);
 						cmd.Parameters.AddWithValue ("$FailedPasswordAnswerAttemptWindowStart", nullDate);
+						cmd.Parameters.AddWithValue ("$TestPassword", "123basidu237e");
 
 						if (cn.State == ConnectionState.Closed)
 							cn.Open ();
